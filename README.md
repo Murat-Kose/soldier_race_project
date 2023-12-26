@@ -1,47 +1,61 @@
-Customer Segmentation Project
-This project is part of the Machine Learning course and focuses on clustering (customer segmentation) using an unsupervised learning method. The goal is to segment customers based on their purchasing history obtained from the membership cards of a big mall.
 
-Project Overview
-The project consists of the following tasks:
+# Multi-Class Classification Project
 
-Mentoring Prep and Self-Study
+## Overview
 
-Import Libraries
-Load Dataset
-Explore Data
-Exploratory Data Analysis (EDA)
+This project explores predictive modeling for multi-class classification problems, emphasizing exploratory data analysis, outlier handling, feature engineering, and algorithm implementation.
 
-Cluster Analysis
+## Goals
 
-Clustering based on Age and Spending Score
-Create a new dataset with two variables of your choice
-Determine the optimal number of clusters
-Apply K-Means
-Visualize and label all the clusters
-Clustering based on Annual Income and Spending Score
-Create a new dataset with two variables of your choice
-Determine the optimal number of clusters
-Apply K-Means
-Visualize and label all the clusters
-Hierarchical Clustering
-Determine the optimal number of clusters using a dendrogram
-Apply Agglomerative Clustering
-Visualize and label all the clusters
-Conclusion
+Utilize EDA to uncover insights and prepare data for modeling.
+Address outlier detection and feature engineering challenges.
+Implement various multi-class classification algorithms.
+Compare model performance and select the most suitable approach.
 
-Dataset
-The dataset used in this project is Mall_Customers.csv, which contains the following columns:
+## Datasets
 
-CustomerID: Unique identifier for each customer
-Gender: Gender of the customer
-Age: Age of the customer
-Annual Income: Annual income of the customer
-Spending Score: Score assigned by the mall based on customer behavior and spending nature
-Dependencies
-This project uses the following Python libraries:
+df_male: https://query.data.world/s/h3pbhckz5ck4rc7qmt2wlknlnn7esr (encoding: latin-1)
+df_female: https://query.data.world/s/sq27zz4hawg32yfxksqwijxmpwmynq
 
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
+## Project Structure
+
+notebooks:
+EDA.ipynb: Exploratory Data Analysis
+preprocessing.ipynb: Data preprocessing and feature engineering
+classification.ipynb: Model implementation and evaluation
+data: (optional, if datasets are not loaded directly from URLs)
+df_male.csv
+df_female.csv
+models: (optional, to store trained models)
+reports: Generated reports and visualizations
+
+## Steps
+
+Exploratory Data Analysis (EDA):
+Import necessary libraries (pandas, NumPy, Matplotlib, Seaborn)
+Load datasets using pd.read_csv()
+Perform initial data exploration:
+Summary statistics
+Visualizations to understand distributions and relationships
+Outlier detection and handling
+Feature selection and engineering
+Data Preprocessing:
+Handle missing values
+Normalize or scale features (if needed)
+Split data into training and testing sets
+Multi-Class Classification:
+Import relevant libraries (scikit-learn)
+Implement and compare multiple classification algorithms:
+Support Vector Machines (SVM)
+Decision Trees
+Random Forests
+XGBoost
+Evaluate model performance using appropriate metrics (e.g., accuracy, precision, recall, F1-score)
+Model Selection and Interpretation:
+Select the best-performing model based on evaluation metrics
+Interpret results and draw insights
+Consider feature importance for understanding model behavior
+
+## Contributions
+
+All contributions are welcome! Feel free to open issues or pull requests for suggestions, improvements, or enhancements.
